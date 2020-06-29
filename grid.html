@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid model</title>
+    <style>
+        .gridcontainer {
+            display: grid;
+            /* grid-template-columns: 1fr 1fr; 
+            grid-row-gap: 10px;
+            grid-column-gap: 10px;*/
+            grid-template-columns: repeat(2, 1fr 2fr);
+            grid-gap: 10px;
+            /* justify-items: stretch;
+            align-items: center; */
+
+
+
+        }
+
+        .gridcontainer>div {
+            padding: 20px;
+            background-color: red;
+        }
+
+        .gridcontainer>div:nth-child(even) {
+            background-color: green;
+        }
+
+        #name {
+            justify-items: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gridcontainer">
+        <div>Lorem Molestias, commodi! 1</div>
+        <div id="name">Lorem Molestias, commodi! 2</div>
+        <div>Lorem Molestias, commodi! 3</div>
+        <div>Lorem Molestias, commodi! 4</div>
+        <div>Lorem Molestias, commodi! 5</div>
+    </div>
+
+</body>
+
+</html>
